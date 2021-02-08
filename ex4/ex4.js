@@ -18,9 +18,9 @@ for (let i = 0; i < 10; i++) {
 function scoring(score) {
   if(score >= 90) {
     console.log('秀')
-  }  else if(score >= 60){
+  }  else if(score >= 60 && score < 90) {
     console.log('良')
-  }　else if (score >= 30) {
+  }　else if (score >= 30 && score < 60) {
     console.log('可')
   } else {
     console.log('不可')
@@ -46,6 +46,6 @@ function scorenig(score) {
     console.log('不可')
   }
 }
-scores.forEach((scorenig) => {
-  console.log(scorenig)
+scores.forEach((score) => {
+  console.log(score,scorenig(score))
 })
