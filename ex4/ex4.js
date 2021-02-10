@@ -15,18 +15,19 @@ for (let i = 0; i < 10; i++) {
 
 // ex04-2.js //
 
-const score = Math.random() * 100
+// const scores = Math.random() * 100
 
 function scoreing(score) {
   if(score >= 90) {
-    console.log('秀');
+    a = "秀"
   }  else if(score >= 60 && score < 90) {
-    console.log('良');
+    a = "良"
   }　else if (score >= 30 && score < 60) {
-    console.log('可');
+    a = "可"
   } else {
-    console.log('不可');
+    a = "不可"
   }
+  return a
 }
 
 console.log(scoreing(100));//=> 秀
@@ -39,14 +40,15 @@ const scores = [13, 67, 18, 54, 30, 22, 89, 49, 21, 65]
 
 function scoreing(score) {
   if(score >= 90) {
-    console.log('秀');
+    a = "秀"
   }  else if(score >= 60 && score < 90) {
-    console.log('良');
+    a = "良"
   }　else if (score >= 30 && score < 60) {
-    console.log('可');
+    a = "可"
   } else {
-    console.log('不可');
+    a = "不可"
   }
+  return a
 }
 scores.forEach((score) => {
   console.log(score,scoreing(score));
